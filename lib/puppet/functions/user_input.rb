@@ -1,9 +1,11 @@
 Puppet::Functions.create_function(:user_input) do
-  param 'Struct[{title                 => String[1],
-                 Optional[desc]        => String[1],
-                 Optional[default]     => String[1],
-                 Optional[hidden]      => Boolean
-                 Optional[failonempty] => Boolean}]', :params
+  dispatch :user_input do
+    param 'Struct[{title                 => String[1],
+                   Optional[desc]        => String[1],
+                   Optional[default]     => String[1],
+                   Optional[hidden]      => Boolean
+                   Optional[failonempty] => Boolean}]', :params
+  end
 
   def user_input(params)
     params = defaults.dup.merge(params)
