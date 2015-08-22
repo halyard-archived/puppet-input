@@ -21,7 +21,7 @@ Puppet::Functions.create_function(:user_input) do
       'with icon caution',
       %W{default answer "#{params[:default]}"},
       'buttons {"Cancel", "OK"} default button 2',
-      "#{'with hidden answer' if params[:is_hidden]})",
+      "#{'with hidden answer' if params[:hidden]})",
     ]
   end
 
