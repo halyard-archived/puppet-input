@@ -3,7 +3,7 @@ Puppet::Functions.create_function(:user_input) do
     param 'Struct[{title       => String[1],
                    desc        => Optional[String[1]],
                    default     => Optional[String[1]],
-                   hidden      => Optional[Boolean]
+                   hidden      => Optional[Boolean],
                    failonempty => Optional[Boolean]}]', :params
   end
 
