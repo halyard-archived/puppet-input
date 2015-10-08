@@ -1,0 +1,22 @@
+{
+  "name": "halyard-input",
+  "version": "0.0.7",
+  "author": "Les Aker",
+  "license": "MIT",
+  "summary": "Accept input via an applescript box",
+  "source": "https://github.com/halyard/puppet-input",
+  "project_page": "https://github.com/halyard/puppet-input",
+  "issues_url": "https://github.com/halyard/puppet-input/issues",
+  "dependencies": [
+
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Darwin",
+      "operatingsystemmajrelease": [
+        "14",
+        "15"
+      ]
+    }
+  ]
+}
